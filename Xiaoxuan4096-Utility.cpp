@@ -3,8 +3,11 @@
 
 #include "pch.h"
 #include "framework.h"
+#include "Xiaoxuan4096-Utility.h"
 
-// TODO: 这是一个库函数示例
-void fnXiaoxuan4096Utility()
-{
+#include <iostream>
+
+void test() {
+	std::cout << "Nice test!" << std::endl;
+	return;
 }

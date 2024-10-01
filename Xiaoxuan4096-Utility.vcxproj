@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Xiaoxuan4096-Utility.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
