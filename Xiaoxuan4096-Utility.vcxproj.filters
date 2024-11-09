@@ -13,24 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\Basic">
+      <UniqueIdentifier>{5791913c-48b2-4c1f-a18d-c4df4c1b0fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Basic\FileBase">
+      <UniqueIdentifier>{9932169f-396d-4237-b735-2ae97ea8d990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Basic">
+      <UniqueIdentifier>{75b30744-ccb1-41cb-937a-32cbf22f616e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Basic\FileBase">
+      <UniqueIdentifier>{0d7b7578-843c-4509-9e01-23cada4a6e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Basic\Exception">
+      <UniqueIdentifier>{8da4be18-1a77-4ec7-bb68-12532def0303}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Basic\Exception">
+      <UniqueIdentifier>{8419f416-c704-41a4-84db-97871724009b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="pch.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Xiaoxuan4096-Utility.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Basic\FileBase\FileBase.h">
+      <Filter>头文件\Basic\FileBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Basic\Exception\Exception.h">
+      <Filter>头文件\Basic\Exception</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Xiaoxuan4096-Utility.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="SourceCodes\Basic\FileBase\FileBase.cpp">
+      <Filter>源文件\Basic\FileBase</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCodes\Basic\Exception\Exception.cpp">
+      <Filter>源文件\Basic\Exception</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

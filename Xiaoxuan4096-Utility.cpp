@@ -1,13 +1,7 @@
-﻿// Xiaoxuan4096-Utility.cpp : 定义静态库的函数。
-//
+﻿// Xiaoxuan4096-Utility - Utilitys for myself.
+// Version: 0.0.0.0
+// Written by Xiaoxuan4096. All rights reserved.
 
 #include "pch.h"
 #include "framework.h"
 #include "Xiaoxuan4096-Utility.h"
-
-#include <iostream>
-
-void test() {
-	std::cout << "Nice test!" << std::endl;
-	return;
-}
