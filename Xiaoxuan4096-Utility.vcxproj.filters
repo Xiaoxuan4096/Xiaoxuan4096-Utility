@@ -31,6 +31,12 @@
     <Filter Include="源文件\Basic\Exception">
       <UniqueIdentifier>{8419f416-c704-41a4-84db-97871724009b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Basic\StringUtilities">
+      <UniqueIdentifier>{2f02c67c-96f3-4384-ba81-95afaae3897d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Basic\StringUtilities">
+      <UniqueIdentifier>{a719f4c5-7a6e-4c0e-a040-94ff74ff6d7e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Xiaoxuan4096-Utility.h">
@@ -42,6 +48,9 @@
     <ClInclude Include="Headers\Basic\Exception\Exception.h">
       <Filter>头文件\Basic\Exception</Filter>
     </ClInclude>
+    <ClInclude Include="Headers\Basic\StringUtilities\StringUtilities.h">
+      <Filter>头文件\Basic\StringUtilities</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Xiaoxuan4096-Utility.cpp">
@@ -52,6 +61,9 @@
     </ClCompile>
     <ClCompile Include="SourceCodes\Basic\Exception\Exception.cpp">
       <Filter>源文件\Basic\Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCodes\Basic\StringUtilities\StringUtilities.cpp">
+      <Filter>源文件\Basic\StringUtilities</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

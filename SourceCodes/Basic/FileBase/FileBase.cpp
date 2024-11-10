@@ -3,7 +3,7 @@
 // Written by Xiaoxuan4096. All rights reserved.
 
 // Note that all the functions below won't throw any exceptions, even if an error occurred.
-// You should be responsible to check whether the operation is done correctly.
+// You should be responsible to check whether your file operation is done correctly.
 
 #include "../../../Headers/Basic/FileBase/FileBase.h"
 
@@ -16,7 +16,6 @@ void Xiaoxuan4096::Basic::File::createFile(std::wstring path) {
 	fileCreator.open(path.c_str(), std::ios::app);
 	return;
 }
-
 void Xiaoxuan4096::Basic::File::deleteFile(std::wstring path) {
 }
 
@@ -26,7 +25,6 @@ void Xiaoxuan4096::Basic::File::appendFile(std::wstring path, std::wstring conte
 	if (!fileAppend.is_open())
 		return;
 }
-
 void Xiaoxuan4096::Basic::File::rewriteFile(std::wstring path, std::wstring content) {
 }
 

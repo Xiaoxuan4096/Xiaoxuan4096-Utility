@@ -146,11 +146,13 @@
   <ItemGroup>
     <ClInclude Include="Headers\Basic\Exception\Exception.h" />
     <ClInclude Include="Headers\Basic\FileBase\FileBase.h" />
+    <ClInclude Include="Headers\Basic\StringUtilities\StringUtilities.h" />
     <ClInclude Include="Xiaoxuan4096-Utility.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SourceCodes\Basic\Exception\Exception.cpp" />
     <ClCompile Include="SourceCodes\Basic\FileBase\FileBase.cpp" />
+    <ClCompile Include="SourceCodes\Basic\StringUtilities\StringUtilities.cpp" />
     <ClCompile Include="Xiaoxuan4096-Utility.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

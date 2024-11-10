@@ -1,5 +1,5 @@
 // Exception.h - Basic exception support.
-// Version: 0.0.0.0
+// Version: 0.0.0.1
 // Written by Xiaoxuan4096. All rights reserved.
 
 #pragma once
@@ -15,8 +15,12 @@ namespace Xiaoxuan4096 {
 			std::wstring detail = L"Warning: An error occurred.";
 			SYSTEMTIME time;
 		public:
-			Exception();
-			std::wstring getDetail();
+			Exception(std::wstring exceptionDetail); // Time data will be added automatically.
+
+			std::wstring getExceptionDetail();
+			SYSTEMTIME getExceptionTime();
 		};
+
+		std::wstring what(Exception exception);
 	}
 }
