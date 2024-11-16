@@ -9,29 +9,61 @@
 
 #include <fstream>
 
-#include <cstdio>
+#include <Windows.h> // Windows Only
 
 void Xiaoxuan4096::Basic::File::createFile(std::wstring path) {
-	std::fstream fileCreator;
-	fileCreator.open(path.c_str(), std::ios::app);
+	appendFile(path, L"");
 	return;
 }
-void Xiaoxuan4096::Basic::File::deleteFile(std::wstring path) {
+void Xiaoxuan4096::Basic::File::deleteFile(std::wstring path) { // This CANNOT be undone. Be careful!
+	DeleteFile(path.c_str()); // Windows Only
+	return;
 }
 
 void Xiaoxuan4096::Basic::File::appendFile(std::wstring path, std::wstring content) {
-	std::fstream fileAppend;
-	fileAppend.open(path.c_str(), std::ios::app);
+	std::wfstream fileAppend;
+	fileAppend.open(path, std::ios::app);
 	if (!fileAppend.is_open())
 		return;
+	fileAppend << content;
+	fileAppend.close();
+	return;
 }
 void Xiaoxuan4096::Basic::File::rewriteFile(std::wstring path, std::wstring content) {
+	std::wfstream fileRewrite;
+	fileRewrite.open(path, std::ios::out);
+	if (!fileRewrite.is_open())
+		return;
+	fileRewrite << content;
+	fileRewrite.close();
+	return;
 }
 
 std::wstring Xiaoxuan4096::Basic::File::readFile(std::wstring path) {
-	return std::wstring();
+	std::wfstream fileRead;
+	std::wstring content;
+	fileRead.open(path, std::ios::in);
+	if (!fileRead.is_open())
+		return;
+	fileRead >> content;
+	return content;
 }
 
 std::vector<std::wstring> Xiaoxuan4096::Basic::File::readFileByLines(std::wstring path) {
-	return std::vector<std::wstring>();
+	std::vector<std::wstring> content;
+	std::wfstream fileRead;
+	std::wstring tmp;
+	fileRead.open(path, std::ios::in);
+	if (!fileRead.is_open())
+		return;
+	while (getline(fileRead, tmp)) {
+		if (fileRead.fail() || fileRead.bad()) {
+			fileRead.close();
+			content.clear();
+			break;
+		}
+		content.push_back(tmp);
+	}
+	fileRead.close();
+	return content;
 }
