@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Exception\Exception.cpp" />
     <ClCompile Include="FileBase\FileBase.cpp" />
     <ClCompile Include="StringUtilities\StringUtilities.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Exception\Exception.h" />
     <ClInclude Include="FileBase\FileBase.h" />
     <ClInclude Include="StringUtilities\StringUtilities.h" />
   </ItemGroup>
