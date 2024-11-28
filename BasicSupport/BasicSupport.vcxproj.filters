@@ -19,15 +19,27 @@
     <Filter Include="头文件\FileBase">
       <UniqueIdentifier>{d2937903-0710-4c0e-9061-09d03ec19265}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\StringUtilities">
+      <UniqueIdentifier>{1a97a42d-b452-4c74-a1d1-a4caa83dc916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\StringUtilities">
+      <UniqueIdentifier>{ab62b1a4-2f9f-454d-a23c-22e40c40f583}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FileBase\FileBase.cpp">
       <Filter>源文件\FileBase</Filter>
     </ClCompile>
+    <ClCompile Include="StringUtilities\StringUtilities.cpp">
+      <Filter>源文件\StringUtilities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileBase\FileBase.h">
       <Filter>头文件\FileBase</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtilities\StringUtilities.h">
+      <Filter>头文件\StringUtilities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
