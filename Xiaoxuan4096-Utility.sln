@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决�
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileEditor", "FileEditor\FileEditor.vcxproj", "{CE1806CB-4355-4EAC-8C71-0837DD4FEF8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -27,6 +29,14 @@ Global
 		{632C7386-30EF-4975-B7CB-5CD3C74260FC}.Release|x64.Build.0 = Release|x64
 		{632C7386-30EF-4975-B7CB-5CD3C74260FC}.Release|x86.ActiveCfg = Release|Win32
 		{632C7386-30EF-4975-B7CB-5CD3C74260FC}.Release|x86.Build.0 = Release|Win32
+		{CE1806CB-4355-4EAC-8C71-0837DD4FEF8F}.Debug|x64.ActiveCfg = Debug|x64
+		{CE1806CB-4355-4EAC-8C71-0837DD4FEF8F}.Debug|x64.Build.0 = Debug|x64
+		{CE1806CB-4355-4EAC-8C71-0837DD4FEF8F}.Debug|x86.ActiveCfg = Debug|Win32
+		{CE1806CB-4355-4EAC-8C71-0837DD4FEF8F}.Debug|x86.Build.0 = Debug|Win32
+		{CE1806CB-4355-4EAC-8C71-0837DD4FEF8F}.Release|x64.ActiveCfg = Release|x64
+		{CE1806CB-4355-4EAC-8C71-0837DD4FEF8F}.Release|x64.Build.0 = Release|x64
+		{CE1806CB-4355-4EAC-8C71-0837DD4FEF8F}.Release|x86.ActiveCfg = Release|Win32
+		{CE1806CB-4355-4EAC-8C71-0837DD4FEF8F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

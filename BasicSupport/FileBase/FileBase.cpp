@@ -1,5 +1,5 @@
 // FileBase.cpp - Basic file operation support.
-// Version: 0.0.0.1
+// Version: 0.0.0.3
 // Written by Xiaoxuan4096. All rights reserved.
 
 // Note that all the functions below won't throw any exceptions, even if an error occurred.
@@ -36,6 +36,15 @@ void Xiaoxuan4096::Basic::File::rewriteFile(std::wstring path, std::wstring cont
 		return;
 	fileRewrite << content;
 	fileRewrite.close();
+	return;
+}
+
+void Xiaoxuan4096::Basic::File::createEmptyDirectory(std::wstring path) {
+	CreateDirectory(path.c_str(), NULL);
+	return;
+}
+void Xiaoxuan4096::Basic::File::removeEmptyDirectory(std::wstring path) {
+	RemoveDirectory(path.c_str());
 	return;
 }
 
