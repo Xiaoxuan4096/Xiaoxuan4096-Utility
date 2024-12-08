@@ -22,12 +22,14 @@
     <ClCompile Include="Exception\Exception.cpp" />
     <ClCompile Include="FileBase\FileBase.cpp" />
     <ClCompile Include="StringUtilities\StringUtilities.cpp" />
+    <ClCompile Include="UniqueIdentityString\UniqueIdentityString.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exception\Exception.h" />
     <ClInclude Include="FileBase\FileBase.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="StringUtilities\StringUtilities.h" />
+    <ClInclude Include="UniqueIdentityString\UniqueIdentityString.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="BasicSupport.rc" />

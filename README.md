@@ -11,6 +11,8 @@
 ---
 ## 更新日志
 ### 2024/12/08
+引入UniqueIdentityString类。
+
 向 FileBase 库添加复制文件功能。
 
 修改使用的 C++ 标准为 C++17 ，使用`<filesystem>`重写 FileBase 库。

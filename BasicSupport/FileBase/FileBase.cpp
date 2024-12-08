@@ -1,5 +1,5 @@
 // FileBase.cpp - Basic file operation support.
-// Version: 0.0.0.5
+// Version: 0.0.0.6
 // Written by Xiaoxuan4096. All rights reserved.
 
 // Note that all the functions below won't throw any exceptions, even if an error occurred.
@@ -80,4 +80,8 @@ std::wstring Xiaoxuan4096::Basic::File::readFile(std::wstring path) {
 		return content;
 	fileReader >> content;
 	return content;
+}
+
+bool Xiaoxuan4096::Basic::File::existFile(std::wstring path) {
+	return std::filesystem::exists(path);
 }

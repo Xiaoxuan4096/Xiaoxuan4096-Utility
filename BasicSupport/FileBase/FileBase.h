@@ -1,5 +1,5 @@
 // FileBase - Basic file operation support.
-// Version: 0.0.0.5
+// Version: 0.0.0.6
 // Written by Xiaoxuan4096. All rights reserved.
 
 #pragma once
@@ -23,6 +23,8 @@ namespace Xiaoxuan4096 {
 			void copyDirectoryAndAllContents(std::wstring location, std::wstring destination) noexcept;
 
 			std::wstring readFile(std::wstring path); // Using it directly to deal with LARGE files is NOT RECOMMENDED!!!
+
+			bool existFile(std::wstring path);
 		}
 	}
 }

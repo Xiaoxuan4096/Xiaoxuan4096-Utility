@@ -1,5 +1,5 @@
 // FileEditor - File operation.
-// Version: 0.0.0.1
+// Version: 0.0.0.2
 // Written by Xiaoxuan4096.
 
 #pragma once
@@ -10,10 +10,12 @@
 namespace Xiaoxuan4096 {
 	namespace File {
 		enum class FileEditorCategory {File, folder};
+		const wchar_t uniqueIdentityStringChars[17] = L"0123456789abcdef";
+		const size_t uniqueIdentityStringLength = 16;
 
 		class FileEditor {
 		private:
-			std::wstring fileDirectory = L"", fileName = L"", cacheDirectory = L""; // Empty cache file path means that cache file will not be used.
+			std::wstring fileDirectory = L"", fileName = L"", cacheDirectory = L"", uniqueIdentityString = L""; // Empty cache directory path means that cache file will not be used.
 			FileEditorCategory category = FileEditorCategory::File;
 			std::vector<std::wstring> fileContent; // A storage for reading file. Note that some cache files will be created when reading if you choose to use cache files.
 		public:
