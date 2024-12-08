@@ -9,19 +9,26 @@
 
 namespace Xiaoxuan4096 {
 	namespace File {
-		enum class FileEditorCategory {file, folder};
+		enum class FileEditorCategory {File, folder};
 
 		class FileEditor {
 		private:
-			std::wstring filePath, cacheDirectoryPath = L""; // Empty cache file path means that cache file will not be used.
-			FileEditorCategory category;
-			std::vector<std::wstring> content; // A storage for reading file.
+			std::wstring fileDirectory = L"", fileName = L"", cacheDirectory = L""; // Empty cache file path means that cache file will not be used.
+			FileEditorCategory category = FileEditorCategory::File;
+			std::vector<std::wstring> fileContent; // A storage for reading file. Note that some cache files will be created when reading if you choose to use cache files.
 		public:
-			FileEditor(std::wstring filePath, std::wstring cacheDirectoryPath = L"", FileEditorCategory category);
-			void linkWithFile(std::wstring filePath);
+			FileEditor(std::wstring fileDirectory, std::wstring fileName, std::wstring cacheDirectory = L"", FileEditorCategory category = FileEditorCategory::File);
+			void linkWithFile(std::wstring fileDirectory, std::wstring fileName);
 			void unlinkWithFile();
-			void linkWithCacheDirectory(std::wstring cacheDirectoryPath = L"");
+			std::wstring getLinkedFileName();
+			void linkWithCacheDirectory(std::wstring cacheDirectory = L"");
 			void unlinkWithCacheDirectory();
+			std::wstring getLinkedCacheDirectoryName();
+
+			void createFile();
+
+			void append(std::wstring content);
+			void rewrite(std::wstring content);
 		};
 	}
 }

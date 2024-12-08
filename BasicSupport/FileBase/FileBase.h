@@ -1,5 +1,5 @@
 // FileBase - Basic file operation support.
-// Version: 0.0.0.3
+// Version: 0.0.0.4
 // Written by Xiaoxuan4096. All rights reserved.
 
 #pragma once
@@ -18,6 +18,7 @@ namespace Xiaoxuan4096 {
 
 			void createEmptyDirectory(std::wstring path);
 			void removeEmptyDirectory(std::wstring path);
+			void removeDirectoryAndAllContents(std::wstring path);
 
 			std::wstring readFile(std::wstring path); // USING IT to deal with LARGE files is NOT RECOMMENDED!!!
 			std::vector<std::wstring> readFileByLines(std::wstring path); // DO NOT USE IT to deal with VERY LARGE files!!!
