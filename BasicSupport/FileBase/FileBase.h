@@ -1,11 +1,10 @@
 // FileBase - Basic file operation support.
-// Version: 0.0.0.4
+// Version: 0.0.0.5
 // Written by Xiaoxuan4096. All rights reserved.
 
 #pragma once
 
 #include <string>
-#include <vector>
 
 namespace Xiaoxuan4096 {
 	namespace Basic {
@@ -20,8 +19,10 @@ namespace Xiaoxuan4096 {
 			void removeEmptyDirectory(std::wstring path);
 			void removeDirectoryAndAllContents(std::wstring path);
 
-			std::wstring readFile(std::wstring path); // USING IT to deal with LARGE files is NOT RECOMMENDED!!!
-			std::vector<std::wstring> readFileByLines(std::wstring path); // DO NOT USE IT to deal with VERY LARGE files!!!
+			void copySingleFile(std::wstring location, std::wstring destination) noexcept;
+			void copyDirectoryAndAllContents(std::wstring location, std::wstring destination) noexcept;
+
+			std::wstring readFile(std::wstring path); // Using it directly to deal with LARGE files is NOT RECOMMENDED!!!
 		}
 	}
 }
