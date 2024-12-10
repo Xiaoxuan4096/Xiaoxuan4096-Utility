@@ -4,14 +4,20 @@
 ---
 ## 内容
 ### BasicSupport
-这是对其他库的基本支持。包括文件读写、异常类、字符串操作等。
+这是对其他库的基本支持。
+- FileBase : 基础文件操作函数。
+- StringUtilities : 字符串操作函数。
+- ObjectUniqueIdentityString : 对象唯一标识符。通过随机数产生。
+- Exception : 异常处理类。
 ### FileEditor
 基础的文件读写库。
 
 ---
 ## 更新日志
+### 2024/12/10
+完善 UniqueIdentityString 类并重命名为 ObjectUniqueIdentityString 。
 ### 2024/12/08
-引入UniqueIdentityString类。
+引入 UniqueIdentityString 类。
 
 向 FileBase 库添加复制文件功能。
 

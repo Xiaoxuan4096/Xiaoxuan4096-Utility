@@ -31,11 +31,11 @@
     <Filter Include="源文件\Exception">
       <UniqueIdentifier>{b10b5a7a-80b2-4699-a7ab-f9f766fdd98d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\UniqueIdentityString">
-      <UniqueIdentifier>{46166e68-243d-4cc9-ac69-a0402167b492}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\UniqueIdentityString">
+    <Filter Include="源文件\ObjectUniqueIdentityString">
       <UniqueIdentifier>{db9f8c07-e4fb-4e3d-ba44-22fb094f19c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ObjectUniqueIdentityString">
+      <UniqueIdentifier>{46166e68-243d-4cc9-ac69-a0402167b492}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -48,8 +48,8 @@
     <ClCompile Include="Exception\Exception.cpp">
       <Filter>源文件\Exception</Filter>
     </ClCompile>
-    <ClCompile Include="UniqueIdentityString\UniqueIdentityString.cpp">
-      <Filter>源文件\UniqueIdentityString</Filter>
+    <ClCompile Include="ObjectUniqueIdentityString\ObjectUniqueIdentityString.cpp">
+      <Filter>源文件\ObjectUniqueIdentityString</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -65,8 +65,8 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="UniqueIdentityString\UniqueIdentityString.h">
-      <Filter>头文件\UniqueIdentityString</Filter>
+    <ClInclude Include="ObjectUniqueIdentityString\ObjectUniqueIdentityString.h">
+      <Filter>头文件\ObjectUniqueIdentityString</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

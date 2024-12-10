@@ -15,7 +15,7 @@ namespace Xiaoxuan4096 {
 
 		class FileEditor {
 		private:
-			std::wstring fileDirectory = L"", fileName = L"", cacheDirectory = L"", uniqueIdentityString = L""; // Empty cache directory path means that cache file will not be used.
+			std::wstring fileDirectory = L"", fileName = L"", cacheDirectory = L""; // Empty cache directory path means that cache file will not be used.
 			FileEditorCategory category = FileEditorCategory::File;
 			std::vector<std::wstring> fileContent; // A storage for reading file. Note that some cache files will be created when reading if you choose to use cache files.
 		public:

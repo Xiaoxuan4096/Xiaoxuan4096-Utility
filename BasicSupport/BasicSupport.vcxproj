@@ -21,15 +21,15 @@
   <ItemGroup>
     <ClCompile Include="Exception\Exception.cpp" />
     <ClCompile Include="FileBase\FileBase.cpp" />
+    <ClCompile Include="ObjectUniqueIdentityString\ObjectUniqueIdentityString.cpp" />
     <ClCompile Include="StringUtilities\StringUtilities.cpp" />
-    <ClCompile Include="UniqueIdentityString\UniqueIdentityString.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exception\Exception.h" />
     <ClInclude Include="FileBase\FileBase.h" />
+    <ClInclude Include="ObjectUniqueIdentityString\ObjectUniqueIdentityString.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="StringUtilities\StringUtilities.h" />
-    <ClInclude Include="UniqueIdentityString\UniqueIdentityString.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="BasicSupport.rc" />

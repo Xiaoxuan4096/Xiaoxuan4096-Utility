@@ -5,22 +5,12 @@
 #include "FileEditor.h"
 #include "../BasicSupport/FileBase/FileBase.h"
 
-#include <random>
-
 Xiaoxuan4096::File::FileEditor::FileEditor(std::wstring fileDirectory, std::wstring fileName, std::wstring cacheDirectory, FileEditorCategory category) {
 	this->fileDirectory = fileDirectory;
 	this->fileName = fileName;
 	this->cacheDirectory = cacheDirectory;
 	this->category = category;
 	fileContent.clear();
-
-	if (uniqueIdentityString == L"") { // Generate unique identity string.
-		std::random_device rd;
-		std::uniform_int_distribution<> uid(0, 15);
-		for (size_t i = 0; i < uniqueIdentityStringLength; i++)
-			uniqueIdentityString += uniqueIdentityStringChars[uid(rd)];
-	}
-
 	return;
 }
 void Xiaoxuan4096::File::FileEditor::linkWithFile(std::wstring fileDirectory, std::wstring fileName) {
