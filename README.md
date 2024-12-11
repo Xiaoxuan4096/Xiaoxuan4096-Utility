@@ -4,7 +4,8 @@
 ---
 ## 版权声明
 > [!IMPORTANT]
-> 本程序及其所有部分归 **Xiaoxuan4096** 所有。如用于商业目的，须事先向 Xiaoxuan4096@outlook.com 致函申请。
+> 本程序及其所有部分归 **Xiaoxuan4096** 所有。
+> 如用于商业目的，须事先向 Xiaoxuan4096@outlook.com 致函申请。
 ---
 ## 内容
 ### BasicSupport
