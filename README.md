@@ -4,8 +4,7 @@
 ---
 ## 版权声明
 > [!IMPORTANT]
-> 本程序及其所有部分归 **Xiaoxuan4096** 所有。
-> 如用于商业目的，须事先向 Xiaoxuan4096@outlook.com 致函申请。
+> 本程序及其所有部分归 **Xiaoxuan4096** 所有。如用于商业目的，须事先向 **Xiaoxuan4096@outlook.com** 致函申请。
 ---
 ## 内容
 ### BasicSupport
@@ -36,7 +35,7 @@
 
 开始编写 FileEditor ，增加 FileBase 中对文件夹操作的支持。
 ### 2024/12/01
-更改许可证为 GNU GPL v3。
+更改许可证为 GPL-3.0 License。
 ### 2024/11/28
 迁移 Exception 库（版本：0.0.0.1）至本仓库。
 
