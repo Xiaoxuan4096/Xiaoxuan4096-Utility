@@ -2,15 +2,23 @@
 自己编写的一些实用程序。
 
 ---
+## 版权声明
+> [!IMPORTANT]
+> 本程序及其所有部分归 **Xiaoxuan4096** 所有。如用于商业目的，须事先向 Xiaoxuan4096@outlook.com 致函申请。
+---
 ## 内容
 ### BasicSupport
 这是对其他库的基本支持。
-- FileBase : 基础文件操作函数。
-- StringUtilities : 字符串操作函数。
-- ObjectUniqueIdentityString : 对象唯一标识符。通过随机数产生。
-- Exception : 异常处理类。
-### FileEditor
+- [FileBase](/BasicSupport/FileBase/FileBase.h) ：基础文件操作函数。
+- [StringUtilities](/BasicSupport/StringUtilities/StringUtilities.h) ：字符串操作函数。
+- [ObjectUniqueIdentityString](/BasicSupport/ObjectUniqueIdentityString/ObjectUniqueIdentityString.h) ：对象唯一标识符。通过随机数产生。
+- [Exception](/BasicSupport/Exception/Exception.h) ：异常处理类。
+### [FileEditor](/FileEditor/FileEditor.h)
 基础的文件读写库。
+
+---
+## 注意事项
+编写环境：Microsoft Visual Studio 2022
 
 ---
 ## 更新日志
