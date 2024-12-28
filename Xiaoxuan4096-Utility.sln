@@ -13,6 +13,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileEditor", "FileEditor\FileEditor.vcxproj", "{CE1806CB-4355-4EAC-8C71-0837DD4FEF8F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{CB9DD1A7-C1E0-4763-A07A-CDA70EEAF03D}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\UpdateLog.md = Documents\UpdateLog.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Introduction", "Introduction", "{56616DE9-47F5-43D9-BAEE-D1EFD328E4BA}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\Introduction\BasicSupport.md = Documents\Introduction\BasicSupport.md
+		FileEditor.md = FileEditor.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicSupportDetails", "BasicSupportDetails", "{8534F38E-A4F3-44D3-82FC-4012DD24FDD5}"
+	ProjectSection(SolutionItems) = preProject
+		Exception.md = Exception.md
+		Documents\Introduction\BasicSupportDetails\FileBase.md = Documents\Introduction\BasicSupportDetails\FileBase.md
+		ObjectUniqueIdentityString.md = ObjectUniqueIdentityString.md
+		StringUtilities.md = StringUtilities.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -40,5 +59,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CB9DD1A7-C1E0-4763-A07A-CDA70EEAF03D} = {EE4B3FE0-C8F6-413A-8032-B2434405CB72}
+		{56616DE9-47F5-43D9-BAEE-D1EFD328E4BA} = {CB9DD1A7-C1E0-4763-A07A-CDA70EEAF03D}
+		{8534F38E-A4F3-44D3-82FC-4012DD24FDD5} = {56616DE9-47F5-43D9-BAEE-D1EFD328E4BA}
 	EndGlobalSection
 EndGlobal

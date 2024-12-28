@@ -1,5 +1,5 @@
 // ObjectUniqueIdentityString - Tool for identifying objects.
-// Version: 0.0.0.1
+// Version: 0.0.0.2
 // Written by Xiaoxuan4096.
 
 // Note that a UniqueIdentityString can only be generated once and will not change.
@@ -20,7 +20,7 @@ namespace Xiaoxuan4096 {
 			public:
 				ObjectUniqueIdnetityString();
 				ObjectUniqueIdnetityString(size_t length, std::wstring chars);
-				std::wstring getObjectUniqueIdentityString();
+				inline std::wstring getObjectUniqueIdentityString();
 			};
 		}
 	}
