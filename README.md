@@ -8,7 +8,7 @@
 ---
 ## 内容
 - [BasicSuppport](/Documents/Introduction/BasicSupport.md)
-- [FileEditor](/Documents/Introduction/FileEditor.h)
+- [FileEditor](/Documents/Introduction/FileEditor.md)
 ---
 [查看更新日志](Documents/UpdateLog.md)
 
