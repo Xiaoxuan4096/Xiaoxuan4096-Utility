@@ -21,15 +21,15 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Introduction", "Introduction", "{56616DE9-47F5-43D9-BAEE-D1EFD328E4BA}"
 	ProjectSection(SolutionItems) = preProject
 		Documents\Introduction\BasicSupport.md = Documents\Introduction\BasicSupport.md
-		FileEditor.md = FileEditor.md
+		Documents\Introduction\FileEditor.md = Documents\Introduction\FileEditor.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicSupportDetails", "BasicSupportDetails", "{8534F38E-A4F3-44D3-82FC-4012DD24FDD5}"
 	ProjectSection(SolutionItems) = preProject
-		Exception.md = Exception.md
+		Documents\Introduction\BasicSupportDetails\Exception.md = Documents\Introduction\BasicSupportDetails\Exception.md
 		Documents\Introduction\BasicSupportDetails\FileBase.md = Documents\Introduction\BasicSupportDetails\FileBase.md
-		ObjectUniqueIdentityString.md = ObjectUniqueIdentityString.md
-		StringUtilities.md = StringUtilities.md
+		Documents\Introduction\BasicSupportDetails\ObjectUniqueIdentityString.md = Documents\Introduction\BasicSupportDetails\ObjectUniqueIdentityString.md
+		Documents\Introduction\BasicSupportDetails\StringUtilities.md = Documents\Introduction\BasicSupportDetails\StringUtilities.md
 	EndProjectSection
 EndProject
 Global
