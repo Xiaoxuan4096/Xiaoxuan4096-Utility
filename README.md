@@ -7,10 +7,15 @@
 > 本程序及其所有部分归 **Xiaoxuan4096** 所有。如用于商业目的，须事先向 **Xiaoxuan4096@outlook.com** 致函申请。
 ---
 ## 内容
+<<<<<<< HEAD
 - [BasicSuppport](/Documents/Introduction/BasicSupport.md)
 - [FileEditor](/Documents/Introduction/FileEditor.h)
+=======
+- [BasicSuppport](Documents/Introduction/BasicSupport.md)
+- [FileEditor](Documents/Introduction/FileEditor.h)
+>>>>>>> 淇鏂囨。寮曠敤閿欒銆?
 ---
-[查看更新日志](/Documents/UpdateLog.md)
+[查看更新日志](Documents/UpdateLog.md)
 
 ---
 ## 注意事项
