@@ -1,10 +1,13 @@
 ﻿// FileEditor.cpp - File operation.
-// Version: 0.0.0.2
+// Version: 0.0.0.3
 // Written by Xiaoxuan4096.
 
 #include "FileEditor.h"
 #include "../BasicSupport/FileBase/FileBase.h"
 
+Xiaoxuan4096::File::FileEditor::FileEditor() {
+	return;
+}
 Xiaoxuan4096::File::FileEditor::FileEditor(std::wstring fileDirectory, std::wstring fileName, std::wstring cacheDirectory, FileEditorCategory category) {
 	this->fileDirectory = fileDirectory;
 	this->fileName = fileName;

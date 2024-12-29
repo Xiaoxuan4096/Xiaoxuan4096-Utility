@@ -1,13 +1,13 @@
 // ObjectUniqueIdentityString.cpp - Tool for identifying objects.
-// Version: 0.0.0.2
+// Version: 0.0.0.3
 // Written by Xiaoxuan4096.
 
 #include "ObjectUniqueIdentityString.h"
 
 #include <random>
 
-Xiaoxuan4096::Basic::Identity::ObjectUniqueIdnetityString::ObjectUniqueIdnetityString() {
-	ObjectUniqueIdnetityString(DefaultOUIDSLength, DefaultOUIDSCharacters);
+Xiaoxuan4096::Basic::Identity::ObjectUniqueIdnetityString::ObjectUniqueIdnetityString() { // Default generater.
+	ObjectUniqueIdnetityString(16, L"0123456789abcdef");
 	return;
 }
 Xiaoxuan4096::Basic::Identity::ObjectUniqueIdnetityString::ObjectUniqueIdnetityString(size_t length, std::wstring chars) {
