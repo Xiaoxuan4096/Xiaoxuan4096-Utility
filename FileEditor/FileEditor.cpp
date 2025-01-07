@@ -55,6 +55,9 @@ void Xiaoxuan4096::File::FileEditor::unlinkWithCacheDirectory() {
 std::wstring Xiaoxuan4096::File::FileEditor::getLinkedCacheDirectoryName() {
 	return cacheDirectory;
 }
+std::wstring Xiaoxuan4096::File::FileEditor::getObjectUniqueIdentityString() {
+	return ouids.getObjectUniqueIdentityString();
+}
 
 void Xiaoxuan4096::File::FileEditor::createFile() {
 	if (Xiaoxuan4096::Basic::File::existFile(fileDirectory + fileName))

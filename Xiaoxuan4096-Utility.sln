@@ -12,6 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决�
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileEditor", "FileEditor\FileEditor.vcxproj", "{CE1806CB-4355-4EAC-8C71-0837DD4FEF8F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{632C7386-30EF-4975-B7CB-5CD3C74260FC} = {632C7386-30EF-4975-B7CB-5CD3C74260FC}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{CB9DD1A7-C1E0-4763-A07A-CDA70EEAF03D}"
 	ProjectSection(SolutionItems) = preProject
@@ -33,6 +36,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicSupportDetails", "Basi
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{A48D9DA3-EEAC-42D6-A29B-27BE00BDB77B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{632C7386-30EF-4975-B7CB-5CD3C74260FC} = {632C7386-30EF-4975-B7CB-5CD3C74260FC}
+		{CE1806CB-4355-4EAC-8C71-0837DD4FEF8F} = {CE1806CB-4355-4EAC-8C71-0837DD4FEF8F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -18,8 +18,7 @@ namespace Xiaoxuan4096 {
 			std::wstring fileDirectory = L"", fileName = L"", cacheDirectory = L""; // Empty cache directory path means that cache files will not be used.
 			FileEditorCategory category = FileEditorCategory::File;
 			std::vector<std::wstring> fileContent; // A storage for reading file. Note that some cache files will be created when reading if you choose to use cache files.
-		public:	
-			Basic::Identity::ObjectUniqueIdnetityString ouid;
+			Basic::Identity::ObjectUniqueIdnetityString ouids;
 		public:
 			FileEditor();
 			FileEditor(std::wstring fileDirectory, std::wstring fileName, std::wstring cacheDirectory = L"", FileEditorCategory category = FileEditorCategory::File);
@@ -29,6 +28,7 @@ namespace Xiaoxuan4096 {
 			void linkWithCacheDirectory(std::wstring cacheDirectory = L"");
 			void unlinkWithCacheDirectory();
 			std::wstring getLinkedCacheDirectoryName();
+			std::wstring getObjectUniqueIdentityString();
 
 			void createFile();
 

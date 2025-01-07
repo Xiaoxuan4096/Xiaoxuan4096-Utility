@@ -2,7 +2,7 @@
 // Version: 0.0.0.3
 // Written by Xiaoxuan4096.
 
-// Note that a UniqueIdentityString can only be generated once and will not change.
+// Note that an ObjectUniqueIdentityString can only be generated once and cannot be changed.
 
 #pragma once
 
