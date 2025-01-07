@@ -6,11 +6,7 @@
 > [!IMPORTANT]
 > 本程序及其所有部分归 **Xiaoxuan4096** 所有。如用于商业目的，须事先向 **Xiaoxuan4096@outlook.com** 致函申请并订立条款。
 ---
-## 内容
-- [BasicSuppport](/Documents/Introduction/BasicSupport.md)
-- [FileEditor](/Documents/Introduction/FileEditor.md)
----
-[查看更新日志](Documents/UpdateLog.md)
+[查看更新日志](/UpdateLog.md)
 
 ---
 ## 注意事项
