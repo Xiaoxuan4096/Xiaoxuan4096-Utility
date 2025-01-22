@@ -69,6 +69,12 @@ void Xiaoxuan4096::File::FileEditor::createFile() {
 }
 
 void Xiaoxuan4096::File::FileEditor::append(std::wstring content) {
+	Xiaoxuan4096::Basic::File::appendFile(fileDirectory + fileName, content);
+
+	return;
 }
 void Xiaoxuan4096::File::FileEditor::rewrite(std::wstring content) {
+	Xiaoxuan4096::Basic::File::rewriteFile(fileDirectory + fileName, content);
+
+	return;
 }
