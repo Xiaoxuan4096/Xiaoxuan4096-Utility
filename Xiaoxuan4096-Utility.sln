@@ -26,6 +26,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{5E038417-CD89-4AEC-8A91-79636E00E354}"
 	ProjectSection(SolutionItems) = preProject
 		docs\Home.md = docs\Home.md
+		index.html = index.html
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zh-cn", "zh-cn", "{FB52F515-62BE-40F8-BEE9-8F558232097E}"
