@@ -1,5 +1,5 @@
 // Exception.h - Basic exception support.
-// Version: 0.0.0.1
+// Version: 0.0.0.2
 // Written by Xiaoxuan4096. All rights reserved.
 
 #pragma once
@@ -9,18 +9,20 @@
 #include <Windows.h>
 
 namespace Xiaoxuan4096 {
-	namespace Exception {
-		class Exception {
-		private:
-			std::wstring detail = L"Warning: An error occurred.";
-			SYSTEMTIME time;
-		public:
-			Exception(std::wstring exceptionDetail); // Time data will be added automatically.
+	namespace Basic {
+		namespace Exception {
+			class Exception {
+			private:
+				std::wstring detail = L"Warning: An error occurred.";
+				SYSTEMTIME time;
+			public:
+				Exception(std::wstring exceptionDetail); // Time data will be added automatically.
 
-			std::wstring getExceptionDetail();
-			SYSTEMTIME getExceptionTime();
-		};
+				std::wstring getExceptionDetail();
+				SYSTEMTIME getExceptionTime();
+			};
 
-		std::wstring what(Exception exception);
+			std::wstring what(Exception exception);
+		}
 	}
 }

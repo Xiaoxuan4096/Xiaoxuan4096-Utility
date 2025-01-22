@@ -23,6 +23,36 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj",
 		{CE1806CB-4355-4EAC-8C71-0837DD4FEF8F} = {CE1806CB-4355-4EAC-8C71-0837DD4FEF8F}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{5E038417-CD89-4AEC-8A91-79636E00E354}"
+	ProjectSection(SolutionItems) = preProject
+		docs\Home.md = docs\Home.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zh-cn", "zh-cn", "{FB52F515-62BE-40F8-BEE9-8F558232097E}"
+	ProjectSection(SolutionItems) = preProject
+		docs\zh-cn\简体中文版-Wiki-导航.md = docs\zh-cn\简体中文版-Wiki-导航.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicSupport", "BasicSupport", "{5C2917F5-ACF1-4FA6-A9A6-D237123C8899}"
+	ProjectSection(SolutionItems) = preProject
+		docs\zh-cn\BasicSupport\BasicSupport-导航.md = docs\zh-cn\BasicSupport\BasicSupport-导航.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exception", "Exception", "{13F7B5E3-FB1A-468F-A33F-7A25B9A7E84D}"
+	ProjectSection(SolutionItems) = preProject
+		docs\zh-cn\BasicSupport\Exception\Exception-介绍.md = docs\zh-cn\BasicSupport\Exception\Exception-介绍.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FileBase", "FileBase", "{6C55282D-5DEC-45A3-A65D-9F42681906D2}"
+	ProjectSection(SolutionItems) = preProject
+		docs\zh-cn\BasicSupport\FileBase\FileBase-介绍.md = docs\zh-cn\BasicSupport\FileBase\FileBase-介绍.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "en-us", "en-us", "{DFB9AF6C-17B4-41D7-A85D-EF5B6FA5B65B}"
+	ProjectSection(SolutionItems) = preProject
+		docs\en-us\English-Wiki-Guide.md = docs\en-us\English-Wiki-Guide.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -58,5 +88,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E038417-CD89-4AEC-8A91-79636E00E354} = {EE4B3FE0-C8F6-413A-8032-B2434405CB72}
+		{FB52F515-62BE-40F8-BEE9-8F558232097E} = {5E038417-CD89-4AEC-8A91-79636E00E354}
+		{5C2917F5-ACF1-4FA6-A9A6-D237123C8899} = {FB52F515-62BE-40F8-BEE9-8F558232097E}
+		{13F7B5E3-FB1A-468F-A33F-7A25B9A7E84D} = {5C2917F5-ACF1-4FA6-A9A6-D237123C8899}
+		{6C55282D-5DEC-45A3-A65D-9F42681906D2} = {5C2917F5-ACF1-4FA6-A9A6-D237123C8899}
+		{DFB9AF6C-17B4-41D7-A85D-EF5B6FA5B65B} = {5E038417-CD89-4AEC-8A91-79636E00E354}
 	EndGlobalSection
 EndGlobal
