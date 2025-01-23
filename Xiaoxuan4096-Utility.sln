@@ -54,6 +54,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "en-us", "en-us", "{DFB9AF6C
 		docs\en-us\English-Wiki-Guide.md = docs\en-us\English-Wiki-Guide.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{A568EA55-F442-42E7-A4C7-1CDA131AA8E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General", "General", "{8509D5C1-FC5D-44F8-B486-73A758B48CFA}"
+	ProjectSection(SolutionItems) = preProject
+		Images\General\Note.png = Images\General\Note.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -97,5 +104,7 @@ Global
 		{13F7B5E3-FB1A-468F-A33F-7A25B9A7E84D} = {5C2917F5-ACF1-4FA6-A9A6-D237123C8899}
 		{6C55282D-5DEC-45A3-A65D-9F42681906D2} = {5C2917F5-ACF1-4FA6-A9A6-D237123C8899}
 		{DFB9AF6C-17B4-41D7-A85D-EF5B6FA5B65B} = {5E038417-CD89-4AEC-8A91-79636E00E354}
+		{A568EA55-F442-42E7-A4C7-1CDA131AA8E1} = {EE4B3FE0-C8F6-413A-8032-B2434405CB72}
+		{8509D5C1-FC5D-44F8-B486-73A758B48CFA} = {A568EA55-F442-42E7-A4C7-1CDA131AA8E1}
 	EndGlobalSection
 EndGlobal
