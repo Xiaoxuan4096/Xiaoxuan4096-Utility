@@ -17,7 +17,7 @@ Xiaoxuan4096-Utility Wiki 已经迁移至新仓库。原 Wiki 已被删除。
 
 2025 年 1 月 23 日， Wiki 的迁移宣告完成。新的编辑都将推送至该仓库。
 
-您可以访问 [Xiaoxuan4096-Utility-Wiki 仓库](Xiaoxuan4096/Xiaoxuan4096-Utility-Wiki) 查看程序使用说明。
+您可以访问 [Xiaoxuan4096-Utility-Wiki 仓库](https://github.com/Xiaoxuan4096/Xiaoxuan4096-Utility-Wiki) 查看程序使用说明。
 
 ---
 ## 注意事项
