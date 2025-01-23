@@ -21,4 +21,6 @@ Xiaoxuan4096-Utility Wiki 已经迁移至新仓库。原 Wiki 已被删除。
 
 ---
 ## 注意事项
-编写环境：Microsoft Visual Studio 2022
+编写环境： Microsoft Visual Studio 2022
+
+C++ 标准： C++17
