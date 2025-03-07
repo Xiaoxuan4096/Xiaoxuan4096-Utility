@@ -67,6 +67,25 @@ void Xiaoxuan4096::File::FileEditor::createFile() {
 
 	return;
 }
+void Xiaoxuan4096::File::FileEditor::renameFile(std::wstring newFileName) {
+	if (option == FileOption::Skip && Xiaoxuan4096::Basic::File::existFile(fileDirectory + newFileName))
+		return;
+
+	std::wstring oldFileName = fileName;
+	fileName = newFileName;
+	createFile();
+	
+	Xiaoxuan4096::Basic::File::copySingleFile(fileDirectory + oldFileName, fileDirectory + fileName);
+}
+void Xiaoxuan4096::File::FileEditor::deleteFile() {
+}
+
+void Xiaoxuan4096::File::FileEditor::createDirectory() {
+}
+void Xiaoxuan4096::File::FileEditor::renameDirectory(std::wstring newFileDirectory) {
+}
+void Xiaoxuan4096::File::FileEditor::deleteDirectory() {
+}
 
 void Xiaoxuan4096::File::FileEditor::append(std::wstring content) {
 	Xiaoxuan4096::Basic::File::appendFile(fileDirectory + fileName, content);
@@ -77,4 +96,8 @@ void Xiaoxuan4096::File::FileEditor::rewrite(std::wstring content) {
 	Xiaoxuan4096::Basic::File::rewriteFile(fileDirectory + fileName, content);
 
 	return;
+}
+
+std::wstring Xiaoxuan4096::File::FileEditor::read() {
+	return std::wstring();
 }
