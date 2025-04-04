@@ -82,6 +82,6 @@ std::wstring Xiaoxuan4096::Basic::File::readFile(std::wstring path) {
 	return content;
 }
 
-bool Xiaoxuan4096::Basic::File::existFile(std::wstring path) {
+bool Xiaoxuan4096::Basic::File::exist(std::wstring path) {
 	return std::filesystem::exists(path);
 }

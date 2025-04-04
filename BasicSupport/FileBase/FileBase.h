@@ -24,7 +24,7 @@ namespace Xiaoxuan4096 {
 
 			std::wstring readFile(std::wstring path); // Using it directly to deal with LARGE files is NOT RECOMMENDED!!!
 
-			bool existFile(std::wstring path);
+			bool exist(std::wstring path);
 		}
 	}
 }
