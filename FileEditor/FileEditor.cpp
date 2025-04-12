@@ -1,11 +1,21 @@
 ﻿// FileEditor.cpp - File operation.
-// Version: 0.0.0.3
+// Version: 0.0.0.4
 // Written by Xiaoxuan4096.
 
 #include <exception>
 
 #include "FileEditor.h"
 #include "../BasicSupport/FileBase/FileBase.h"
+#include "../BasicSupport/StringUtilities/StringUtilities.h"
+
+void Xiaoxuan4096::File::FileEditor::createCacheDirectory() {
+	Basic::File::createEmptyDirectory(cacheDirectory);
+	return;
+}
+void Xiaoxuan4096::File::FileEditor::deleteCacheDirectory() {
+	Basic::File::removeDirectoryAndAllContents(cacheDirectory);
+	return;
+}
 
 Xiaoxuan4096::File::FileEditor::FileEditor() {
 	return;
@@ -15,6 +25,11 @@ Xiaoxuan4096::File::FileEditor::FileEditor(std::wstring fileDirectory, std::wstr
 	this->fileName = fileName;
 	this->cacheDirectory = cacheDirectory;
 	fileContent.clear();
+	return;
+}
+
+void Xiaoxuan4096::File::FileEditor::setAndLinkWithUniqueCacheDirectory() {
+	cacheDirectory = L"FileEditorCache" + ouids.getObjectUniqueIdentityString();
 	return;
 }
 void Xiaoxuan4096::File::FileEditor::linkWithFile(std::wstring fileDirectory, std::wstring fileName) {
@@ -30,7 +45,7 @@ void Xiaoxuan4096::File::FileEditor::unlinkWithFile() {
 	fileContent.clear();
 
 	if (cacheDirectory != L"")
-		Xiaoxuan4096::Basic::File::removeDirectoryAndAllContents(cacheDirectory);
+		Basic::File::removeDirectoryAndAllContents(cacheDirectory);
 
 	return;
 }
@@ -39,16 +54,16 @@ std::wstring Xiaoxuan4096::File::FileEditor::getLinkedFileName() {
 }
 void Xiaoxuan4096::File::FileEditor::linkWithCacheDirectory(std::wstring cacheDirectory) {
 	if (cacheDirectory != L"")
-		Xiaoxuan4096::Basic::File::copyDirectoryAndAllContents(this->cacheDirectory, cacheDirectory);
+		Basic::File::copyDirectoryAndAllContents(this->cacheDirectory, cacheDirectory);
 	else
-		Xiaoxuan4096::Basic::File::removeDirectoryAndAllContents(this->cacheDirectory);
+		Basic::File::removeDirectoryAndAllContents(this->cacheDirectory);
 	this->cacheDirectory = cacheDirectory;
 
 	return;
 }
 void Xiaoxuan4096::File::FileEditor::unlinkWithCacheDirectory() {
 	if (cacheDirectory != L"")
-		Xiaoxuan4096::Basic::File::removeDirectoryAndAllContents(cacheDirectory);
+		Basic::File::removeDirectoryAndAllContents(cacheDirectory);
 	cacheDirectory = L"";
 
 	return;
@@ -61,17 +76,17 @@ std::wstring Xiaoxuan4096::File::FileEditor::getObjectUniqueIdentityString() {
 }
 
 void Xiaoxuan4096::File::FileEditor::createFile() {
-	if (Xiaoxuan4096::Basic::File::exist(fileDirectory + fileName)) {
+	if (Basic::File::exist(fileDirectory + fileName)) {
 		throw std::exception("Error when creating file: the file has already existed.");
 		return;
 	}
 
-	Xiaoxuan4096::Basic::File::createFile(fileDirectory + fileName);
+	Basic::File::createFile(fileDirectory + fileName);
 
 	return;
 }
 void Xiaoxuan4096::File::FileEditor::renameFile(std::wstring newFileName) {
-	if (option == FileOption::Skip && Xiaoxuan4096::Basic::File::exist(fileDirectory + newFileName)) {
+	if (option == FileOption::Skip && Basic::File::exist(fileDirectory + newFileName)) {
 		throw std::exception("Error when renaming file: file with same name exists.");
 		return;
 	}
@@ -80,34 +95,34 @@ void Xiaoxuan4096::File::FileEditor::renameFile(std::wstring newFileName) {
 	fileName = newFileName;
 	createFile();
 	
-	Xiaoxuan4096::Basic::File::copySingleFile(fileDirectory + oldFileName, fileDirectory + fileName);
-	Xiaoxuan4096::Basic::File::deleteFile(fileDirectory + oldFileName);
+	Basic::File::copySingleFile(fileDirectory + oldFileName, fileDirectory + fileName);
+	Basic::File::deleteFile(fileDirectory + oldFileName);
 
 	return;
 }
 void Xiaoxuan4096::File::FileEditor::deleteFile() {
-	if (!Xiaoxuan4096::Basic::File::exist(fileDirectory + fileName)) {
+	if (!Basic::File::exist(fileDirectory + fileName)) {
 		throw std::exception("Error when deleting file: no such file.");
 		return;
 	}
 
-	Xiaoxuan4096::Basic::File::deleteFile(fileDirectory + fileName);
+	Basic::File::deleteFile(fileDirectory + fileName);
 
 	return;
 }
 
 void Xiaoxuan4096::File::FileEditor::createDirectory() {
-	if (Xiaoxuan4096::Basic::File::exist(fileDirectory)) {
+	if (Basic::File::exist(fileDirectory)) {
 		throw std::exception("Error when creating directory: the directory has already existed.");
 		return;
 	}
 
-	Xiaoxuan4096::Basic::File::createEmptyDirectory(fileDirectory);
+	Basic::File::createEmptyDirectory(fileDirectory);
 
 	return;
 }
 void Xiaoxuan4096::File::FileEditor::renameDirectory(std::wstring newFileDirectory) {
-	if (option == FileOption::Skip && Xiaoxuan4096::Basic::File::exist(newFileDirectory)) {
+	if (option == FileOption::Skip && Basic::File::exist(newFileDirectory)) {
 		throw std::exception("Error when renaming directory: directory with same name exists.");
 		return;
 	}
@@ -116,33 +131,47 @@ void Xiaoxuan4096::File::FileEditor::renameDirectory(std::wstring newFileDirecto
 	fileDirectory = newFileDirectory;
 	createDirectory();
 
-	Xiaoxuan4096::Basic::File::copyDirectoryAndAllContents(oldDirectoryName, fileDirectory);
-	Xiaoxuan4096::Basic::File::removeDirectoryAndAllContents(oldDirectoryName);
+	Basic::File::copyDirectoryAndAllContents(oldDirectoryName, fileDirectory);
+	Basic::File::removeDirectoryAndAllContents(oldDirectoryName);
 
 	return;
 }
 void Xiaoxuan4096::File::FileEditor::deleteDirectory() {
-	if (!Xiaoxuan4096::Basic::File::exist(fileDirectory)) {
+	if (!Basic::File::exist(fileDirectory)) {
 		throw std::exception("Error when deleting directory: no such directory.");
 		return;
 	}
 
-	Xiaoxuan4096::Basic::File::removeDirectoryAndAllContents(fileDirectory);
+	Basic::File::removeDirectoryAndAllContents(fileDirectory);
 
 	return;
 }
 
 void Xiaoxuan4096::File::FileEditor::append(std::wstring content) {
-	Xiaoxuan4096::Basic::File::appendFile(fileDirectory + fileName, content);
+	if (content.size() > maxContentSizeForOneReadAndWrite && cacheDirectory != L"") {
+		createCacheDirectory();
+		for (size_t i = 0; i < content.size(); i += maxContentSizeForOneReadAndWrite) {
+			std::wstring tmpCacheFile = cacheDirectory + L"AppendCache" + Utilities::String::convertToWstring(i / maxContentSizeForOneReadAndWrite);
+			Basic::File::createFile(tmpCacheFile);
+			Basic::File::rewriteFile(tmpCacheFile, content.substr(i, maxContentSizeForOneReadAndWrite));
+		}
+		for (size_t i = 0; i < content.size(); i += maxContentSizeForOneReadAndWrite) {
+			std::wstring tmp = Basic::File::readFile(cacheDirectory + L"AppendCache" + Utilities::String::convertToWstring(i / maxContentSizeForOneReadAndWrite));
+			Basic::File::appendFile(fileDirectory + fileName, tmp);
+		}
+		deleteCacheDirectory();
+	}
+	else
+		Basic::File::appendFile(fileDirectory + fileName, content);
 
 	return;
 }
 void Xiaoxuan4096::File::FileEditor::rewrite(std::wstring content) {
-	Xiaoxuan4096::Basic::File::rewriteFile(fileDirectory + fileName, content);
+	Basic::File::rewriteFile(fileDirectory + fileName, content);
 
 	return;
 }
 
 std::wstring Xiaoxuan4096::File::FileEditor::read() {
-	return Xiaoxuan4096::Basic::File::readFile(fileDirectory + fileName);
+	return Basic::File::readFile(fileDirectory + fileName);
 }
