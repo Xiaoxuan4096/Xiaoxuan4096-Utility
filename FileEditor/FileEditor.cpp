@@ -144,5 +144,5 @@ void Xiaoxuan4096::File::FileEditor::rewrite(std::wstring content) {
 }
 
 std::wstring Xiaoxuan4096::File::FileEditor::read() {
-	return std::wstring();
+	return Xiaoxuan4096::Basic::File::readFile(fileDirectory + fileName);
 }
